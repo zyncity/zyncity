@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Federal Bureau Of Investigation</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display IP Address</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
 </head>
-<body>
-    <h1>Your IP Address:</h1>
-    <p id="ipDisplay">Fetching...</p>
-    <script>
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('ipDisplay').innerText = 'Your IP address is ' + data.ip;
-            })
-            .catch(error => {
-                console.error('Error fetching IP:', error);
-                document.getElementById('ipDisplay').innerText = 'Error fetching IP.';
-            });
-    </script>
+<body text="black">
+    <center>
+        <img src="2.png">
+            <h2>
+                This website is under investigation
+            </h2>
+            <p>
+                This domain belongs to a criminal group that is being processed, this website has been seized pursuant to an order issued by a U.S. District Court and is used as a tool in an investigation to catch online criminals.
+            </p>
+            <p>
+                A federal grand jury has indicted several individuals and entities allegedly involved in the operation of this website and related websites charging them with many federal crimes.
+            </p>
+            <p id="ipDisplay">
+                Fetching...
+            </p>
+            <br><a href="http://www.fbi.gov/contact-us/">Contact</a>
+    </center>
 </body>
+<script>
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('ipDisplay').innerText = 'Your IP Address, ' + data.ip + ' has been logged for further investigation.';
+        })
+        .catch(error => {
+            console.error('Error fetching IP:', error);
+            document.getElementById('ipDisplay').innerText = 'Error fetching IP.';
+        });
+</script>
 </html>
