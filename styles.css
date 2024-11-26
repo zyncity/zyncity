@@ -1,23 +1,22 @@
-/* Set a repeating background pattern for the body */
 body {
     background-image: url('1.png');
-    background-size: auto; /* Keeps the pattern size intact */
-    background-repeat: repeat; /* Repeats the pattern as intended */
-    background-position: top left; /* Aligns the pattern to the top-left */
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: top left;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centers text content */
-    font-family: Arial, sans-serif; /* Optional: Add a default font */
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-/* Logo container for 2.png */
-#logoContainer {
-    width: 300px; /* Fixed width for the logo */
-    height: auto;
+#container {
+    width: 40%;
+    max-width: 500px;
+    height: 0;
+    padding-bottom: 20%;
     background-image: url('2.png');
-    background-size: contain; /* Scales the image proportionally */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 20px auto; /* Adds space and centers the logo */
-    aspect-ratio: 1.5; /* Optional: Adjust for the aspect ratio of the logo */
+    margin: 20px auto;
 }
