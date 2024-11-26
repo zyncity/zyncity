@@ -1,23 +1,23 @@
-/* Set the background image for the body */
+/* Set a repeating background pattern for the body */
 body {
     background-image: url('1.png');
-    background-size: cover; /* Ensures the background covers the full screen */
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: auto; /* Keeps the pattern size intact */
+    background-repeat: repeat; /* Repeats the pattern as intended */
+    background-position: top left; /* Aligns the pattern to the top-left */
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center; /* Centers text content */
+    font-family: Arial, sans-serif; /* Optional: Add a default font */
 }
 
-/* Style for the image container to display 2.png */
-#imageContainer {
-    width: 100%; /* Full width for responsiveness */
-    max-width: 300px; /* Optional: Limit the max size */
-    height: auto; 
-    background-image: url('2.png'); /* 2.png is now a background image */
-    background-size: contain; /* Ensures the image scales properly */
+/* Logo container for 2.png */
+#logoContainer {
+    width: 300px; /* Fixed width for the logo */
+    height: auto;
+    background-image: url('2.png');
+    background-size: contain; /* Scales the image proportionally */
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto; /* Centers the container */
-    aspect-ratio: 1; /* Maintains aspect ratio (for modern browsers) */
+    margin: 20px auto; /* Adds space and centers the logo */
+    aspect-ratio: 1.5; /* Optional: Adjust for the aspect ratio of the logo */
 }
