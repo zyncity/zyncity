@@ -9,12 +9,32 @@ body {
 }
 
 #container {
-    width: 70%; /* Adjust the width to make it more responsive */
-    max-width: 727px; /* Cap the logo size */
-    aspect-ratio: 3 / 1; /* Use the correct aspect ratio of your logo (width-to-height) */
+    width: 727px;
+    height: 450px;
     background-image: url('2.png');
-    background-size: contain; /* Scale the image proportionally */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 20px auto; /* Centers the logo with spacing */
+    margin: 20px auto;
+}
+
+@media (max-width: 1024px) {
+    #container {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        width: 90%;
+        height: auto;
+    }
 }
