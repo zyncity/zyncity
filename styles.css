@@ -1,7 +1,23 @@
+/* Set the background image for the body */
 body {
     background-image: url('1.png');
+    background-size: cover; /* Ensures the background covers the full screen */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-1 {
-	background-image: url('2.png');
+/* Style for the image container to display 2.png */
+#imageContainer {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px; /* Optional: Limit the max size */
+    height: auto; 
+    background-image: url('2.png'); /* 2.png is now a background image */
+    background-size: contain; /* Ensures the image scales properly */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; /* Centers the container */
+    aspect-ratio: 1; /* Maintains aspect ratio (for modern browsers) */
 }
