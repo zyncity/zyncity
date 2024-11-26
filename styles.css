@@ -6,11 +6,10 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
 
 #container {
-    width: 40%;
+    width: 70%;
     max-width: 727px;
     height: 0;
     padding-bottom: 20%;
