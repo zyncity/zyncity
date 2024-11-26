@@ -21,20 +21,20 @@ body {
 @media (max-width: 1024px) {
     #container {
         width: 60%;
-        height: auto;
+        height: calc(60% * 0.619);
     }
 }
 
 @media (max-width: 768px) {
     #container {
         width: 80%;
-        height: auto;
+        height: calc(80% * 0.619);
     }
 }
 
 @media (max-width: 480px) {
     #container {
         width: 90%;
-        height: auto;
+        height: calc(90% * 0.619);
     }
 }
